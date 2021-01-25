@@ -1,2 +1,2 @@
 # lab-python
-Very simple example python codes
+Very simple examples of python codes
