@@ -4,6 +4,8 @@ from timeit import *
 """
 this is a simple module that implements the dicotomic research
 in two ways, recurive mode and iterative mode
+to calculate the time execution is use the timeit module and lambda function
+every times are in second
 keep attetion between python3 and python2 about integer division
 """
 

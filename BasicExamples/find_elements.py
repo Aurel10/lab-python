@@ -5,7 +5,7 @@ from random import *
 """
 this is a simple module to find commom element on two arrays
 to calculate the time execution is use the timeit module and lambda function
-every time are trasformed into second
+every times are in second
 """
 
 
