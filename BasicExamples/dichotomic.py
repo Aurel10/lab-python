@@ -2,7 +2,7 @@ from timeit import *
 
 
 """
-this is a simple module that implements the dicotomic research
+this is a simple module that implements the dichotomic research
 in two ways, recurive mode and iterative mode
 to calculate the time execution is use the timeit module and lambda function
 every times are in second
