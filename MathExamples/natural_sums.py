@@ -20,16 +20,14 @@ def sum_of_even_numbers(n_even):
     return n_even * (n_even + 1)
 
 
-def check_of_n(n):
-    if n % 2 == 0:
-        return True
-    return False
+def if_even(n):
+    return n % 2 == 0
 
 
 def main():
     n = 10000001
 
-    if (not check_of_n(n)):
+    if (not if_even(n)):
         n_odds = (n // 2) + 1
     else:
         n_odds = n // 2
