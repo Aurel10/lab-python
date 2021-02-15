@@ -8,7 +8,7 @@ There are many implementations from multiple recursion to use the dynamic progra
 
 
 def wrost_fib(n):
-    if n <= 1:
+    if n <= 2:
         return 1
 
     return wrost_fib(n-1) + wrost_fib(n-2)
@@ -24,12 +24,12 @@ def tuple_fib(n):
 
 
 def iterative_fib(n):
-    if n <= 1:
+    if n <= 2:
         return 1
 
     a, b = 0, 1
 
-    while n > 0:
+    while n > 1:
         a, b = b, a+b
         n -= 1
 
@@ -37,10 +37,10 @@ def iterative_fib(n):
 
 
 def mem_fib(n):
-    if n <= 1:
+    if n <= 2:
         return 1
 
-    n += 2
+    n += 1
     fib = [0] * n
     fib[0], fib[1] = 0, 1
 
@@ -51,20 +51,20 @@ def mem_fib(n):
 
 
 def dynamic_fib(n):
-    if n <= 1:
+    if n <= 2:
         return 1
 
     fib = [0] * 2
     fib[0], fib[1] = 0, 1
 
-    for i in range(0, n):
+    for i in range(0, n-1):
         fib[0], fib[1] = fib[1], fib[1]+fib[0]
 
     return fib[1]
 
 
 def main():
-    N = 10
+    N = 30
 
     print("wrost_fib ", wrost_fib(N))
     print("tuple_fib ", tuple_fib(N))
