@@ -1,4 +1,5 @@
 
+
 """
 this is a simple module that provides three methods to calculate the natural summations about
 the natural number from 1 to n (Gauss Sum)
@@ -24,14 +25,22 @@ def if_even(n):
     return n % 2 == 0
 
 
-def main():
-    n = 10000001
-
+def get_n_odds(n):
     if (not if_even(n)):
-        n_odds = (n // 2) + 1
-    else:
-        n_odds = n // 2
-    n_even = n // 2
+        return (n // 2) + 1
+    
+    return n // 2
+
+
+def get_n_even(n):
+    return n // 2
+
+
+def main():
+    n = 10
+
+    n_even = get_n_even(n)
+    n_odds = get_n_odds(n)
 
     print("Gauss Sum = {}".format(\
         sum_of_numbers(n)
