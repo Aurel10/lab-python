@@ -28,7 +28,7 @@ def if_even(n):
 def get_n_odds(n):
     if (not if_even(n)):
         return (n // 2) + 1
-    
+
     return n // 2
 
 
@@ -42,15 +42,15 @@ def main():
     n_even = get_n_even(n)
     n_odds = get_n_odds(n)
 
-    print("Gauss Sum = {}".format(\
+    print("Gauss Sum = {}".format(
         sum_of_numbers(n)
     ))
-    
-    print("odds numbers summation = {}".format(\
+
+    print("odds numbers summation = {}".format(
         sum_of_odds_number(n_odds),
     ))
 
-    print("even numbers summation = {}".format(\
+    print("even numbers summation = {}".format(
         sum_of_even_numbers(n_even)
     ))
 
