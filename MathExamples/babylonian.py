@@ -10,11 +10,11 @@ math library of python and simple python calculation using operator **
 
 
 def babylonian_sqrt(value):
-	step_2 = 0.0
+	step = 0.0
 	result = 0.001
 
-	while result != step_2:
-		step_2 = result
+	while result != step:
+		step = result
 		result += (value / result)
 		result /= 2
 
