@@ -10,11 +10,11 @@ math library of python and simple python calculation using operator **
 
 
 def babylonian_sqrt(value):
-	step_1 = step_2 = 0.0
+	step_2 = 0.0
 	result = 0.001
 
 	while result != step_2:
-		step_1 , step_2 = step_2 , result
+		step_2 = result
 		result += (value / result)
 		result /= 2
 
@@ -22,7 +22,7 @@ def babylonian_sqrt(value):
 
 
 def main():
-	N = 1100000000044141051194814197418974197419714
+	N = 1010180910537218957312895710753892759017589327198051
 	
 	print("radix of {0} is = {1} ".format(N, babylonian_sqrt(N)))
 	print("radix of {0} is = {1} ".format(N, sqrt(N)))	
