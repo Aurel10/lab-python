@@ -10,16 +10,15 @@ math library of python and simple python calculation using operator **
 
 
 def babylonian_sqrt(value):
-	prev_1 = prev_2 = 0.0
-	approx = 1.0
+	step_1 = step_2 = 0.0
+	result = 0.001
 
-	while (approx != prev_1 and approx != prev_2):
-		prev_1 = prev_2
-		prev_2 = approx
-		approx += (value / approx)
-		approx /= 2
-	
-	return approx
+	while result != step_2:
+		step_1 , step_2 = step_2 , result
+		result += (value / result)
+		result /= 2
+
+	return result
 
 
 def main():
